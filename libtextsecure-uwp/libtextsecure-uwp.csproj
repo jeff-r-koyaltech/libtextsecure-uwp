@@ -204,12 +204,6 @@
     <Compile Include="websocket\WebSocketProtos.cs" />
     <Content Include="Properties\libtextsecure.rd.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\libaxolotl\libaxolotl.csproj">
-      <Project>{7f46463c-899e-48ca-b56c-abc386545f29}</Project>
-      <Name>libaxolotl</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
