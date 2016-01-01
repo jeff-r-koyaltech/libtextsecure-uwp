@@ -1,0 +1,3 @@
+REM for some reason, running the same command twice is sometimes important to "really" delete it...at least on my computer...
+rmdir /s /q %USERPROFILE%\.nuget\packages\libtextsecure-uwp
+rmdir /s /q %USERPROFILE%\.nuget\packages\libtextsecure-uwp
