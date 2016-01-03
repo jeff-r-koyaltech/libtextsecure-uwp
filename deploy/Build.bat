@@ -19,7 +19,7 @@ REM build Any CPU
 
 REM create NuGet package
 pushd deploy
-%NuGetPath% pack ..\libtextsecure-uwp\libtextsecure-uwp.csproj -Prop Configuration=Release -outputdirectory .
+%NuGetPath% pack nuget\libtextsecure-uwp.nuspec -Prop Configuration=Release -outputdirectory .
 popd
 
 

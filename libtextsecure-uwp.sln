@@ -5,6 +5,13 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libtextsecure-uwp", "libtextsecure-uwp\libtextsecure-uwp.csproj", "{FAB01AA5-DAFA-4FD5-8642-770C6548ADF8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C410B3D6-3895-49F2-86BB-057EF521BDD9}"
+	ProjectSection(SolutionItems) = preProject
+		deploy\Build.bat = deploy\Build.bat
+		deploy\DeployToLocalRepo.bat = deploy\DeployToLocalRepo.bat
+		deploy\RemoveNuGetCache.bat = deploy\RemoveNuGetCache.bat
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

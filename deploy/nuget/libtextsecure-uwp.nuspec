@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>libtextsecure-uwp</id>
+    <version>1.0.0</version>
+    <title>libtextsecure-uwp</title>
+    <authors>langboost</authors>
+    <owners>langboost</owners>
+    <licenseUrl>https://github.com/langboost/libtextsecure-uwp/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/langboost/libtextsecure-uwp</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/langboost/libtextsecure-uwp/master/NuGetIcon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>TextSecure helper library for Universal Windows applications. Based on https://github.com/WhisperSystems/libtextsecure-java </description>
+    <releaseNotes>First release as a NuGet package.</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>textsecure</tags>
+    <dependencies>
+      <dependency id="libaxolotl-uwp" version="1.0.1" />
+      <dependency id="libphonenumber_uwp" version="1.0.0" />
+      <dependency id="Google.ProtocolBuffers" version="2.4.1.555" />
+      <dependency id="Newtonsoft.Json" version="7.0.1" />
+      <dependency id="Strilanc.Value.May" version="1.0.2" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\..\libtextsecure-uwp\bin\Release\libtextsecure-uwp.dll" target="lib\uap10.0" />
+    <file src="..\..\libtextsecure-uwp\Properties\*.rd.xml" target="content\Properties" />
+  </files>
+</package>

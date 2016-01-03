@@ -116,7 +116,6 @@
     <None Include="protobuf\Provisioning.proto" />
     <None Include="protobuf\TextSecure.proto" />
     <None Include="protobuf\WebSocketResources.proto" />
-    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AsyncHelper.cs" />
