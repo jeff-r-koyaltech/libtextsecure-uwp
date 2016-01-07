@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>libtextsecure-uwp</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>libtextsecure-uwp</title>
     <authors>langboost</authors>
     <owners>langboost</owners>
@@ -11,7 +11,7 @@
     <iconUrl>https://raw.githubusercontent.com/langboost/libtextsecure-uwp/master/NuGetIcon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>TextSecure helper library for Universal Windows applications. Based on https://github.com/WhisperSystems/libtextsecure-java </description>
-    <releaseNotes>First release as a NuGet package.</releaseNotes>
+    <releaseNotes>Including some updates from Github smndtrl/Signal-UWP.</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>textsecure</tags>
     <dependencies>
@@ -23,7 +23,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\..\libtextsecure-uwp\bin\Release\libtextsecure-uwp.dll" target="lib\uap10.0" />
+    <file src="..\..\libtextsecure-uwp\bin\Release\*.dll" target="lib\uap10.0" />
     <file src="..\..\libtextsecure-uwp\Properties\*.rd.xml" target="content\Properties" />
   </files>
 </package>
