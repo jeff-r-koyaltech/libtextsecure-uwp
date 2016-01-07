@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>libtextsecure</RootNamespace>
-    <AssemblyName>libtextsecure-uwp</AssemblyName>
+    <AssemblyName>libtextsecure</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
@@ -116,6 +116,7 @@
     <None Include="protobuf\Provisioning.proto" />
     <None Include="protobuf\TextSecure.proto" />
     <None Include="protobuf\WebSocketResources.proto" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AsyncHelper.cs" />

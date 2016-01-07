@@ -8,8 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("libtextsecure")]
 [assembly: AssemblyDescription("TextSecure library for Universal Windows apps.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Open Whisper Systems")]
-
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("libtextsecure")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
