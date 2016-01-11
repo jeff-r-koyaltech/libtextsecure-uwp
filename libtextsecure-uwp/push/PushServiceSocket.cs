@@ -89,11 +89,8 @@ namespace libtextsecure.push
 
         public async Task<bool> createAccount(bool voice) //throws IOException
         {
-#if DEBUG
-            String path = CREATE_ACCOUNT_SMS_PATH;// CREATE_ACCOUNT_DEBUG_PATH;
-#else
+
             String path = voice ? CREATE_ACCOUNT_VOICE_PATH : CREATE_ACCOUNT_SMS_PATH;
-#endif
             await makeRequest(string.Format(path, credentialsProvider.GetUser()), "GET", null);
             return true;
         }
@@ -616,11 +613,15 @@ namespace libtextsecure.push
                 //Log.w(TAG, "Push service URL: " + serviceUrl);
                 //Log.w(TAG, "Opening URL: " + url);
                 var filter = new HttpBaseProtocolFilter();
-#if DEBUG
-                filter.IgnorableServerCertificateErrors.Add(Windows.Security.Cryptography.Certificates.ChainValidationResult.Expired);
-                filter.IgnorableServerCertificateErrors.Add(Windows.Security.Cryptography.Certificates.ChainValidationResult.Untrusted);
-                filter.IgnorableServerCertificateErrors.Add(Windows.Security.Cryptography.Certificates.ChainValidationResult.InvalidName);
-#endif
+
+                //Normally prefer to use #if DEBUG ... #endif, but this is more reliable given the way NuGet packages are used in real life..
+                if (System.Diagnostics.Debugger.IsAttached)
+                {
+                    filter.IgnorableServerCertificateErrors.Add(Windows.Security.Cryptography.Certificates.ChainValidationResult.Expired);
+                    filter.IgnorableServerCertificateErrors.Add(Windows.Security.Cryptography.Certificates.ChainValidationResult.Untrusted);
+                    filter.IgnorableServerCertificateErrors.Add(Windows.Security.Cryptography.Certificates.ChainValidationResult.InvalidName);
+                }
+
                 //HttpURLConnection connection = (HttpURLConnection)url.openConnection();
 
                 HttpClient connection = new HttpClient(filter);
