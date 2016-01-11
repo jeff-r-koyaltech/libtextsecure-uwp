@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>libtextsecure-uwp</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <title>libtextsecure-uwp</title>
     <authors>langboost</authors>
     <owners>langboost</owners>
