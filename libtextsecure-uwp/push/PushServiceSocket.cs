@@ -72,8 +72,6 @@ namespace libtextsecure.push
         private static readonly String RECEIPT_PATH = "/v1/receipt/{0}/{1}";
         private static readonly String ATTACHMENT_PATH = "/v1/attachments/{0}";
 
-        private static readonly bool ENFORCE_SSL = true;
-
         private readonly String serviceUrl;
         //private readonly TrustManager[] trustManagers;
         private readonly CredentialsProvider credentialsProvider;
@@ -614,8 +612,7 @@ namespace libtextsecure.push
                 //Log.w(TAG, "Opening URL: " + url);
                 var filter = new HttpBaseProtocolFilter();
 
-                //Normally prefer to use #if DEBUG ... #endif, but this is more reliable given the way NuGet packages are used in real life..
-                if (System.Diagnostics.Debugger.IsAttached)
+                if (HttpClientCertificatePolicyState.Policy == HttpClientCertificatePolicy.DevelopmentMode)
                 {
                     filter.IgnorableServerCertificateErrors.Add(Windows.Security.Cryptography.Certificates.ChainValidationResult.Expired);
                     filter.IgnorableServerCertificateErrors.Add(Windows.Security.Cryptography.Certificates.ChainValidationResult.Untrusted);

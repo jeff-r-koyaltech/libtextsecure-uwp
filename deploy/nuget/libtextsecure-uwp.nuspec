@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>libtextsecure-uwp</id>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <title>libtextsecure-uwp</title>
     <authors>langboost</authors>
     <owners>langboost</owners>
@@ -11,7 +11,7 @@
     <iconUrl>https://raw.githubusercontent.com/langboost/libtextsecure-uwp/master/NuGetIcon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>TextSecure helper library for Universal Windows applications. Based on https://github.com/WhisperSystems/libtextsecure-java </description>
-    <releaseNotes>Bug fix for Debug build SSL certificate validation.</releaseNotes>
+    <releaseNotes>SSL certificate validation is now configurable by the consuming library or application.</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>textsecure</tags>
     <dependencies>

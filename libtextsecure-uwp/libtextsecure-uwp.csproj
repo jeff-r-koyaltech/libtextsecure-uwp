@@ -195,6 +195,7 @@
     <Compile Include="util\Base64.cs" />
     <Compile Include="util\CredentialsProvider.cs" />
     <Compile Include="util\Hash.cs" />
+    <Compile Include="util\HttpClientCertificatePolicy.cs" />
     <Compile Include="util\InvalidNumberException.cs" />
     <Compile Include="util\JsonUtil.cs" />
     <Compile Include="util\PhoneNumberFormatter.cs" />
